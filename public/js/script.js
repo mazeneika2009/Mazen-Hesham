@@ -56,8 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             try {
-                // GitHub Pages is static. Replace '/api/contact' with your Formspree URL (e.g., 'https://formspree.io/f/YOUR_ID')
-                const response = await fetch('/api/contact', {
+                // ⚠️ IMPORTANT: GitHub Pages cannot run the Node.js backend.
+                // 1. Go to https://formspree.io/ to create a form and get your unique ID.
+                // 2. Replace 'YOUR_FORM_ID' below with your actual ID (e.g., 'f/xyzyqwer').
+                const response = await fetch('https://formspree.io/f/xdalnorl', {
                     method: 'POST',
                     headers: { 
                         'Content-Type': 'application/json',
