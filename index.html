@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazen Hesham | Front-End Developer</title>
+    <meta name="description" content="Premium Portfolio of a Front-End Web Developer.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">MH</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="btn-primary">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content fade-in-up">
+            <span class="subtitle">Hello, I'm</span>
+            <h1>
+                <span class="typing-wrapper">
+                    <span class="typing-word word-1 gradient-text">Frontend</span>
+                    <span class="typing-word word-2 gradient-text">Mazen Hesham</span>
+                </span>
+            </h1>
+            <p>Building high-performance web experiences with modern technologies and premium design.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Who is <span class="gradient-text">Mazen</span>?</h2>
+            <div class="about-content" style="max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.8;">
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem; opacity: 0.9;">
+                    I am a dedicated <strong>Front-End Developer</strong> with a passion for crafting immersive web experiences. My focus is on writing clean, efficient code to bring creative designs to life, ensuring every pixel serves a purpose.
+                </p>
+                <p style="font-size: 1.1rem; opacity: 0.9;">
+                    With a strong foundation in modern web technologies, I specialize in building responsive, user-centric interfaces. I strive to bridge the gap between aesthetics and functionality, delivering digital solutions that are both beautiful and robust.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid-container">
+                <div class="card skill-card"><h3>HTML5</h3></div>
+                <div class="card skill-card"><h3>Css</h3></div>
+                <div class="card skill-card"><h3>Java Script</h3></div>
+                <div class="card skill-card"><h3>React</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid-container">
+                <div class="card project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>Fashion shopping website</h3>
+                        <p>A scalable shopping experience with real-time inventory.</p>
+                        <a href="https://mazeneika2009.github.io/Voxera/" class="link-arrow">View Case Study &rarr;</a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #2a2a72, #009ffd);"></div>
+                    <div class="project-info">
+                        <h3>Task-flow</h3>
+                        <p>A productivity app for managing tasks and deadlines.</p>
+                        <a href="https://mazeneika2009.github.io/taskFlow/" class="link-arrow">View Case Study &rarr;</a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #2a2a72, #009ffd);"></div>
+                    <div class="project-info">
+                        <h3>Portofolio</h3>
+                        <p></p>
+                        <a href="https://mazeneika2009.github.io/MH/" class="link-arrow">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <h2 class="section-title">Let's Collaborate</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                <p id="form-status" class="form-status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Let's Connect</h2>
+                    <p>Interested in working together? Check out my code or get in touch directly.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/+201094332602" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+                        <a href="https://github.com/mazeneika2009" target="_blank" class="btn btn-github">GitHub</a>
+                        <a href="mailto:mazeneika2009@email.com" class="btn btn-email">Email</a>
+                    </div>
+                </div>
+                <div class="cta-visual-wrapper">
+                    <div class="cta-visual"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Portfolio. Built with Mazen Hesham</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
