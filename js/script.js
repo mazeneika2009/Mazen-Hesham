@@ -56,11 +56,23 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             try {
-                const response = await fetch('/api/contact', {
+                // ⚠️ IMPORTANT: GitHub Pages cannot run the Node.js backend.
+                // 1. Go to https://formspree.io/ to create a form and get your unique ID.
+                // 2. Replace 'YOUR_FORM_ID' below with your actual ID (e.g., 'f/xyzyqwer').
+                const response = await fetch('https://formspree.io/f/xdalnorl', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json' 
+                    },
                     body: JSON.stringify(formData)
                 });
+
+                // Check if response is JSON (prevents "Unexpected token <" crash on 404 HTML pages)
+                const contentType = response.headers.get("content-type");
+                if (!contentType || !contentType.includes("application/json")) {
+                    throw new Error("Backend API not found. (GitHub Pages does not support server-side code like /api/contact)");
+                }
 
                 const result = await response.json();
 
