@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const typingSpeed = 150; // Milliseconds per character
     const deletingSpeed = 75;
     const delayBetweenWords = 2000; // Milliseconds to wait after typing/deleting
-    const pauseBeforeTyping = 500;
+    const pauseBeforeTyping = 1500;
     const elementId = 'typing-text'; // The ID of the span where text will be typed
 
     // --- State ---

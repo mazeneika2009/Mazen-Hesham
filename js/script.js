@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bgContainer = document.createElement('div');
     bgContainer.className = 'bg-floating-text-container';
     bgContainer.innerHTML = `
-        <a href="#contact" class="bg-floating-text">Call Me</a>
-        <a href="#contact" class="bg-floating-text delay">Build your website's Front-End Pages</a>
+        <a href="#contact" class="bg-floating-text delay-3">Transform Your Ideas into Reality</a>
     `;
     document.body.prepend(bgContainer);
 
