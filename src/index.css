@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ground: #0A0C0E;
+  --ground-secondary: #101317;
+  --ink: #EDE7DC;
+  --ink-secondary: #9EA5A8;
+  --muted: #6C7378;
+  --amber: #E8913C;
+  --amber-hover: #D47D2A;
+  --teal: #2E6B72;
+  --hairline: rgba(237, 231, 220, 0.13);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: 'Sora', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Responsive media defaults: never overflow their container.
+   (No global height rule — explicit h-full/object-cover layouts keep control.) */
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+/* Guard against absolute/decorative layers causing page-level x-scroll. */
+main,
+section {
+  overflow-x: clip;
+}
+
+/* Long words/URLs/emails wrap instead of forcing horizontal scroll. */
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li {
+  overflow-wrap: break-word;
+}
+
+::selection {
+  background: var(--amber);
+  color: var(--ground);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ground);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(237, 231, 220, 0.2);
+  border-radius: 5px;
+}
+
+.outlined-numeral {
+  -webkit-text-stroke: 1px var(--ink);
+  color: transparent;
+}
+
+/* Reveal rules scoped to .reveals */
+.reveals [data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveals [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+input, textarea, select, button {
+  font-family: 'Sora', sans-serif;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--amber);
+  box-shadow: 0 0 0 2px var(--amber);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ground);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--hairline);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
