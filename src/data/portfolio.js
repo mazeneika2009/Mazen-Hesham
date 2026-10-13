@@ -533,6 +533,32 @@ const MOCK_CERTIFICATES = [
     credentialLink: '#',
     createdAt: '2026-06-10',
   },
+  {
+    id: 'c-13',
+    title: 'Web Development',
+    issuer: 'IBM',
+    year: '2026',
+    image: '/certificates/ibm-web-development.pdf',
+    file: '/certificates/ibm-web-development.pdf',
+    fileType: 'pdf',
+    description: 'TODO: replace with your IBM Web Development certificate description.',
+    stack: ['Web Development'],
+    credentialLink: '#',
+    createdAt: '2026-06-15',
+  },
+  {
+    id: 'c-14',
+    title: 'Web Application Testing and Deployment',
+    issuer: 'IBM',
+    year: '2026',
+    image: '/certificates/ibm-web-application-testing-and-deployment.pdf',
+    file: '/certificates/ibm-web-application-testing-and-deployment.pdf',
+    fileType: 'pdf',
+    description: 'TODO: replace with your Web Application Testing and Deployment certificate description.',
+    stack: ['Testing', 'Deployment'],
+    credentialLink: '#',
+    createdAt: '2026-06-20',
+  },
 ];
 
 const MOCK_SKILLS = [
