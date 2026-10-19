@@ -533,6 +533,7 @@ const MOCK_CERTIFICATES = [
     credentialLink: '#',
     createdAt: '2026-06-10',
   },
+<<<<<<< HEAD
   {
     id: 'c-13',
     title: 'Web Development',
@@ -559,6 +560,8 @@ const MOCK_CERTIFICATES = [
     credentialLink: '#',
     createdAt: '2026-06-20',
   },
+=======
+>>>>>>> 8a476b79037b870fecb70202f231d372b7ec4fc4
 ];
 
 const MOCK_SKILLS = [
